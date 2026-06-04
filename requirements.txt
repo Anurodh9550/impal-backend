@@ -7,3 +7,5 @@ psycopg[binary]>=3.2
 python-dotenv>=1.0
 Pillow>=11.0
 cloudinary>=1.40
+gunicorn>=23.0
+whitenoise>=6.8
