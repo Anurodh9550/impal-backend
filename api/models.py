@@ -27,6 +27,7 @@ class Product(TimeStampedModel):
     weight = models.CharField(max_length=50, default="1kg")
     weights = models.JSONField(default=list, blank=True)
     description = models.TextField(blank=True)
+    ingredients = models.CharField(max_length=500, blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     old_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     stock = models.PositiveIntegerField(default=0)
